@@ -241,7 +241,7 @@ def Train(model, forward, backward, update, eps, momentum, num_epochs,
             - valid_acc:      Validation accuracy.
     """
     inputs_train, inputs_valid, inputs_test, target_train, target_valid, \
-        target_test = LoadData('../toronto_face.npz')
+        target_test = LoadData('../train.npz')
     rnd_idx = np.arange(inputs_train.shape[0])
     train_ce_list = []
     valid_ce_list = []

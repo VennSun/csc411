@@ -80,8 +80,4 @@ def DisplayPlot(train, valid, ylabel, number=0):
     plt.draw()
     plt.pause(0.0001)
 
-def saveToNpz(fname, array):
-    np.savez(fname,array)
-
-
 
